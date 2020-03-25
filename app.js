@@ -14,11 +14,25 @@ for (let i = 0; i < dogs.length; i++) {
 }
 
 function logOutThings(dogs) {
+    console.log('Here are your ' + dogs.length + ' things');
     for (let i = 0; i < dogs.length; i++) {
-        console.log(dogs[i]);
+        if (dogs[i].weight < 25) {
+            console.log('small dogs')
+            console.log(dogs[i]);
+        }  else {
+            console.log('fat dogs')
+            console.log(dogs[i]);
+    }
+
+       
     }
 }
 
 logOutThings(dogs);
+
+
+
+
+
 
 
